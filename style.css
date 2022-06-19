@@ -1,0 +1,131 @@
+:root {
+  --primary: #0984e3;
+  --secondary: #fdcb6e;
+  --text: #2d3436;
+  --shadow: #636e72;
+  --light-background: #dfe6e9;
+  --dark-background: #b2bec3;
+  --box-radius: 10px;
+  --box-shadow: 0 0 10px var(--shadow);
+}
+body {
+  background: var(--dark-background);
+  font-family: "Times New Roman", Times, serif;
+  color: var(--text);
+}
+.container {
+  margin: 2em auto;
+  width: 80%;
+  background: var(--light-background);
+  border-radius: var(--box-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  display: flex;
+}
+.side {
+  background: var(--primary);
+  flex: 3;
+  padding: 1em;
+}
+.content {
+  padding: 1em;
+  flex: 7;
+}
+.avatar {
+  width: 60%;
+  aspect-ratio: 1;
+  background: var(--light-background);
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  border: var(--light-background) 0.5em solid;
+}
+.avatar img {
+  width: 100%;
+}
+.my-name {
+  margin-top: 0.5em;
+  font-size: 2.5em;
+  text-align: center;
+}
+.titles {
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 0.3em;
+  margin-block-end: 0.5em;
+}
+.text-inverted {
+  color: var(--light-background);
+}
+.description {
+  margin-top: 0;
+}
+.contact-info {
+  margin-bottom: 0.5em;
+}
+.contact-info .title {
+  font-weight: 700;
+}
+.contact-info a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.education .title {
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+.education .title .date {
+  float: right;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+.job h3 {
+  margin-bottom: 0.3em;
+}
+.job .date {
+  float: right;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: var(--shadow);
+}
+.job .job-title {
+  margin-bottom: 0.3em;
+}
+.job ul {
+  margin-top: 0;
+}
+.job li {
+  margin-bottom: 0.1em;
+}
+.skill {
+  background: var(--light-background);
+  color: var(--primary);
+  padding: 0.05em 0.2em;
+  margin: 0.1em;
+  border-radius: 5px;
+}
+.skill-line {
+  display: flex;
+  margin-bottom: 0.3em;
+}
+@media print {
+  body {
+    font-size: 11pt;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 16pt;
+  }
+  h2 {
+    font-size: 15pt;
+  }
+  h3 {
+    font-size: 14pt;
+  }
+  .container{
+    width: calc(297mm - 3em);
+    margin: 1em;
+  }
+}
