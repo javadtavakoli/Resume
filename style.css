@@ -74,18 +74,16 @@ body {
   font-weight: 600;
   margin-bottom: 0.3em;
 }
-.education .title .date {
+.date{
   float: right;
   font-weight: normal;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
+
 .job h3 {
   margin-bottom: 0.3em;
 }
 .job .date {
-  float: right;
-  font-weight: normal;
-  font-size: 0.9em;
   color: var(--shadow);
 }
 .job .job-title {
@@ -116,16 +114,19 @@ body {
     justify-content: center;
   }
   h1 {
-    font-size: 16pt;
-  }
-  h2 {
     font-size: 15pt;
   }
-  h3 {
+  h2 {
     font-size: 14pt;
+  }
+  h3 {
+    font-size: 13pt;
   }
   .container{
     width: calc(297mm - 3em);
     margin: 1em;
+  }
+  .side{
+    flex:4;
   }
 }
